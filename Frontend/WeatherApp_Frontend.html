@@ -3,13 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="css" href="WeatherApp_Frontend.css"/>
+    <link rel="stylesheet" href="WeatherApp_Frontend.css"/>
     <title>The Sailors Weather</title>
 </head>
 <body>
-    <div>
-        <h1>14 days Sailors forecast for <span id="GPS"></span></h1>
+    <div class="headline">
+        <h1>14 days Sailors forecast for <select>
+            <option value="Denmark">Denmark</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Norway">Norway</option>
+        </select></h1>
         <p>Below you will find relevant forecasting variables that will assist you in your voyages.</p>
+    </div>
+    <div class="weatherInformation">
+        <div class="label">Temperature &deg;C </div>
+        <div class="gridRow">
+            <div class="temperatureMonday"></div>
+            <div class="temperatureTuesday"></div>
+            <div class="temperatureWednesday"></div>
+            <div class="temperatureThursday"></div>
+            <div class="temperatureFriday"></div>
+            <div class="temperatureSaturday"></div>
+            <div class="temperatureSunday"></div>
+        </div>
+
+        <div class="label">Precipitation (mm/1t) </div>
+        <div class="gridRow">
+            <div class="precipitationMonday"></div>
+            <div class="precipitationTuesday"></div>
+            <div class="precipitationWednesday"></div>
+            <div class="precipitationThursday"></div>
+            <div class="precipitationFriday"></div>
+            <div class="precipitationSaturday"></div>
+            <div class="precipitationSunday"></div>
+        </div>
+
+        <div class="label">Clouds</div>
+        <div class="gridRow">
+            <div class="cloudsMonday"></div>
+            <div class="cloudsTuesday"></div>
+            <div class="cloudsWednesday"></div>
+            <div class="cloudsThursday"></div>
+            <div class="cloudsFriday"></div>
+            <div class="cloudsSaturday"></div>
+            <div class="cloudsSunday"></div>
+        </div>
+
+        <div class="label">Wind direction</div>
+        <div class="gridRow">
+            <div class="windDirectionMonday"></div>
+            <div class="windDirectionTuesday"></div>
+            <div class="windDirectionWednesday"></div>
+            <div class="windDirectionThursday"></div>
+            <div class="windDirectionFriday"></div>
+            <div class="windDirectionSaturday"></div>
+            <div class="windDirectionSunday"></div>
+        </div>
+
+        <div class="label">Wind speed</div>
+        <div class="gridRow">
+            <div class="windSpeedMonday"></div>
+            <div class="windSpeedTuesday"></div>
+            <div class="windSpeedWednesday"></div>
+            <div class="windSpeedThursday"></div>
+            <div class="windSpeedFriday"></div>
+            <div class="windSpeedSaturday"></div>
+            <div class="windSpeedSunday"></div>
+        </div>
+
+        <div class="label">Storms?</div>
+        <div class="gridRow">
+            <div class="stormsMonday"></div>
+            <div class="stormsTuesday"></div>
+            <div class="stormsWednesday"></div>
+            <div class="stormsThursday"></div>
+            <div class="stormsFriday"></div>
+            <div class="stormsSaturday"></div>
+            <div class="stormsSunday"></div>
+        </div>
+
+        <div class="label">Safe to sail?</div>
+        <div class="gridRow">
+            <div class="safeToSailMonday"></div>
+            <div class="safeToSailTuesday"></div>
+            <div class="safeToSailWednesday"></div>
+            <div class="safeToSailThursday"></div>
+            <div class="safeToSailFriday"></div>
+            <div class="safeToSailSaturday"></div>
+            <div class="safeToSailSunday"></div>
+        </div>
     </div>
 </body>
 </html>
