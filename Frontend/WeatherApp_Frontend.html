@@ -12,88 +12,89 @@
             <caption>Weekly weather forecasting for Copenhagen</caption>
             <th></th>
             <th></th>
-            <th>Mon 01/01</th>
-            <th>Tue 02/01</th>
-            <th>Wed 03/01</th>
-            <th>Thu 04/01</th>
-            <th>Fri 05/01</th>
-            <th>Sat 06/01</th>
-            <th>Sun 07/01</th>
+            <th id="day1">Mon 01/01</th>
+            <th id="day2">Tue 02/01</th>
+            <th id="day3">Wed 03/01</th>
+            <th id="day4">Thu 04/01</th>
+            <th id="day5">Fri 05/01</th>
+            <th id="day6">Sat 06/01</th>
+            <th id="day7">Sun 07/01</th>
         </table>
         <table class="tableData">
             <tr> 
-                <th colspan="2">Temperature</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
+                <th colspan="2">Temperature (&deg;C)</th>
+                    <td id="temp1">1</td>
+                    <td id="temp2">2</td>
+                    <td id="temp3">3</td>
+                    <td id="temp4">4</td>
+                    <td id="temp5">5</td>
+                    <td id="temp6">6</td>
+                    <td id="temp7">7</td>
             </tr>            
             <tr> 
                 <th colspan="2">Weather Condition</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
+                    <td id="weather1">1</td>
+                    <td id="weather2">2</td>
+                    <td id="weather3">3</td>
+                    <td id="weather4">4</td>
+                    <td id="weather5">5</td>
+                    <td id="weather6">6</td>
+                    <td id="weather7">7</td>
             </tr>            
             <tr> 
                 <th colspan="2">Wind Direction</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
+                    <td id="windDir1">1</td>
+                    <td id="windDir2">2</td>
+                    <td id="windDir3">3</td>
+                    <td id="windDir4">4</td>
+                    <td id="windDir5">5</td>
+                    <td id="windDir6">6</td>
+                    <td id="windDir7">7</td>
             </tr>            
             <tr> 
                 <th colspan="2">Wind Speed</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
+                    <td id="windSp1">1</td>
+                    <td id="windSp2">2</td>
+                    <td id="windSp3">3</td>
+                    <td id="windSp4">4</td>
+                    <td id="windSp5">5</td>
+                    <td id="windSp6">6</td>
+                    <td id="windSp7">7</td>
             </tr>            
             <tr> 
                 <th colspan="2">Precipitation</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
+                    <td id="prec1">1</td>
+                    <td id="prec2">2</td>
+                    <td id="prec3">3</td>
+                    <td id="prec4">4</td>
+                    <td id="prec5">5</td>
+                    <td id="prec6">6</td>
+                    <td id="prec7">7</td>
             </tr>            
             <tr> 
-                <th colspan="2">Air moisture</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
+                <th colspan="2">Sunrise</th>
+                    <td id="sunrise1">1</td>
+                    <td id="sunrise2">2</td>
+                    <td id="sunrise3">3</td>
+                    <td id="sunrise4">4</td>
+                    <td id="sunrise5">5</td>
+                    <td id="sunrise6">6</td>
+                    <td id="sunrise7">7</td>
             </tr>            
             <tr> 
-                <th colspan="2">Visibility(km)</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
+                <th colspan="2">Sunset</th>
+                    <td id="sunset1">1</td>
+                    <td id="sunset2">2</td>
+                    <td id="sunset3">3</td>
+                    <td id="sunset4">4</td>
+                    <td id="sunset5">5</td>
+                    <td id="sunset6">6</td>
+                    <td id="sunset7">7</td>
             </tr>
         </table>
         <br>
-        <button>Update Weather Data</button>
+        <button id="updateButton" onclick="updateWeatherTable()">Update Weather Data</button>
+        <p id="timerText"></p>
     </div>
     <script src="WeatherApp_Frontend.js"></script>
 </body>
