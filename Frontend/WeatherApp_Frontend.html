@@ -4,94 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="WeatherApp_Frontend.css"/>
-    <title>The Sailors Weather</title>
+    <title>2 Weeks Weather forecast Copenhagen</title>
 </head>
 <body>
-    <div class="headline">
-        <h1>14 days Sailors forecast for <select>
-            <option value="Denmark">Denmark</option>
-            <option value="Sweden">Sweden</option>
-            <option value="Norway">Norway</option>
-        </select></h1>
-        <p>Below you will find relevant forecasting variables that will assist you in your voyages.</p>
-    </div>
-    <div class="weatherInformation">
-        <div class="label">Temperature &deg;C </div>
-        <div class="gridRow">
-            <div class="temperatureMonday"></div>
-            <div class="temperatureTuesday"></div>
-            <div class="temperatureWednesday"></div>
-            <div class="temperatureThursday"></div>
-            <div class="temperatureFriday"></div>
-            <div class="temperatureSaturday"></div>
-            <div class="temperatureSunday"></div>
-        </div>
-
-        <div class="label">Precipitation (mm/1t) </div>
-        <div class="gridRow">
-            <div class="precipitationMonday"></div>
-            <div class="precipitationTuesday"></div>
-            <div class="precipitationWednesday"></div>
-            <div class="precipitationThursday"></div>
-            <div class="precipitationFriday"></div>
-            <div class="precipitationSaturday"></div>
-            <div class="precipitationSunday"></div>
-        </div>
-
-        <div class="label">Clouds</div>
-        <div class="gridRow">
-            <div class="cloudsMonday"></div>
-            <div class="cloudsTuesday"></div>
-            <div class="cloudsWednesday"></div>
-            <div class="cloudsThursday"></div>
-            <div class="cloudsFriday"></div>
-            <div class="cloudsSaturday"></div>
-            <div class="cloudsSunday"></div>
-        </div>
-
-        <div class="label">Wind direction</div>
-        <div class="gridRow">
-            <div class="windDirectionMonday"></div>
-            <div class="windDirectionTuesday"></div>
-            <div class="windDirectionWednesday"></div>
-            <div class="windDirectionThursday"></div>
-            <div class="windDirectionFriday"></div>
-            <div class="windDirectionSaturday"></div>
-            <div class="windDirectionSunday"></div>
-        </div>
-
-        <div class="label">Wind speed</div>
-        <div class="gridRow">
-            <div class="windSpeedMonday"></div>
-            <div class="windSpeedTuesday"></div>
-            <div class="windSpeedWednesday"></div>
-            <div class="windSpeedThursday"></div>
-            <div class="windSpeedFriday"></div>
-            <div class="windSpeedSaturday"></div>
-            <div class="windSpeedSunday"></div>
-        </div>
-
-        <div class="label">Storms?</div>
-        <div class="gridRow">
-            <div class="stormsMonday"></div>
-            <div class="stormsTuesday"></div>
-            <div class="stormsWednesday"></div>
-            <div class="stormsThursday"></div>
-            <div class="stormsFriday"></div>
-            <div class="stormsSaturday"></div>
-            <div class="stormsSunday"></div>
-        </div>
-
-        <div class="label">Safe to sail?</div>
-        <div class="gridRow">
-            <div class="safeToSailMonday"></div>
-            <div class="safeToSailTuesday"></div>
-            <div class="safeToSailWednesday"></div>
-            <div class="safeToSailThursday"></div>
-            <div class="safeToSailFriday"></div>
-            <div class="safeToSailSaturday"></div>
-            <div class="safeToSailSunday"></div>
-        </div>
+    <div class="weatherForecastingTable">
+        <table class="tableDates">
+            <caption>2 weeks weather forecasting for Copenhagen</caption>
+            <th>Mon 01/01</th>
+            <th>Tue 02/01</th>
+            <th>Wed 03/01</th>
+            <th>Thu 04/01</th>
+            <th>Fri 05/01</th>
+            <th>Sat 06/01</th>
+            <th>Sun 07/01</th>
+            <th>Mon 08/01</th>
+            <th>Tue 09/01</th>
+            <th>Wed 10/01</th>
+            <th>Thu 11/01</th>
+            <th>Fri 12/01</th>
+            <th>Sat 13/01</th>
+            <th>Sun 14/01</th>
+        </table>
+        <table class="tableData">
+            <tr> 
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>

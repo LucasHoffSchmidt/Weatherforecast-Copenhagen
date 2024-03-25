@@ -1,27 +1,26 @@
-.headline {  
+.weatherForecastingTable {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.weatherInformation {
-    display: grid;
-    grid-template-columns: 30px repeat(7, 1fr);
-    grid-template-rows: 30px repeat(7, 1fr);
-    gap: 1px;
-    border: 1px solid darkblue;
+table {
+    table-layout: fixed;
+    width: 50%;
 }
 
-.label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    background-color: orange;
+.tableData {
+    border-collapse: collapse;
+    border:1px solid blue;
 }
 
-.gridRow {
-    display: grid;
-    grid-template-columns: auto 1fr;
+table td {
+    border: 1px solid blue;
+}
+
+caption {  
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: rgb(231, 131, 0);
 }
