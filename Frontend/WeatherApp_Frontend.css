@@ -1,3 +1,7 @@
+body {
+    background-color: lightblue;
+}
+
 .weatherForecastingTable {
     display: flex;
     flex-direction: column;
@@ -15,15 +19,23 @@ table {
     border:1px solid blue;
 }
 
+caption {  
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: rgb(0, 83, 208);
+}
+
+th {
+    color: darkblue;
+    text-overflow:initial;
+}
+
 table td {
     border: 1px solid blue;
 }
 
-caption {  
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: rgb(231, 131, 0);
-}
-
-label {
+button {
+    background-color: orange;
+    height: 2.5em;
+    border-style:ridge;
 }
