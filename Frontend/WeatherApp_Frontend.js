@@ -612,6 +612,210 @@ function loadTemperature() {
 }
 
 function loadWeatherCondition() {
+
+    switch (weatherCondition1) {
+        case 0:
+            weatherCondition1 = "Sunny"
+        break;
+        case 1: case 2: case 3: 
+            weatherCondition1 = "Cloudy";
+        break; 
+        case 45: case 48:
+            weatherCondition1 = "Foggy";
+            break;
+        case 51: case 53: case 55: case 56: case 57: case 61: case 63: case 65: case 66: case 67:
+            weatherCondition1 = "Rainy";
+            break;
+        case 71: case 73: case 75: case 77:
+            weatherCondition1 = "Snowy";
+            break;
+        case 80: case 81: case 82:
+            weatherCondition1 = "Heavy rain";
+            break;
+        case 85: case 86: 
+            weatherCondition1 = "Heavy snow";
+            break;
+        case 95: case 96: case 99:
+            weatherCondition1 = "Thunder";
+            break;
+        default:
+            weatherCondition1 = undefined;
+    } 
+
+    switch (weatherCondition2) {
+        case 0:
+            weatherCondition2 = "Sunny"
+        break;
+        case 1: case 2: case 3: 
+            weatherCondition2 = "Cloudy";
+        break; 
+        case 45: case 48:
+            weatherCondition2 = "Foggy";
+            break;
+        case 51: case 53: case 55: case 56: case 57: case 61: case 63: case 65: case 66: case 67:
+            weatherCondition2 = "Rainy";
+            break;
+        case 71: case 73: case 75: case 77:
+            weatherCondition2 = "Snowy";
+            break;
+        case 80: case 81: case 82:
+            weatherCondition2 = "Heavy rain";
+            break;
+        case 85: case 86: 
+            weatherCondition2 = "Heavy snow";
+            break;
+        case 95: case 96: case 99:
+            weatherCondition2 = "Thunder";
+            break;
+        default:
+            weatherCondition2 = undefined;
+    } 
+
+    switch (weatherCondition3) {
+        case 0:
+            weatherCondition3 = "Sunny"
+        break;
+        case 1: case 2: case 3: 
+            weatherCondition3 = "Cloudy";
+        break; 
+        case 45: case 48:
+            weatherCondition3 = "Foggy";
+            break;
+        case 51: case 53: case 55: case 56: case 57: case 61: case 63: case 65: case 66: case 67:
+            weatherCondition3 = "Rainy";
+            break;
+        case 71: case 73: case 75: case 77:
+            weatherCondition3 = "Snowy";
+            break;
+        case 80: case 81: case 82:
+            weatherCondition3 = "Heavy rain";
+            break;
+        case 85: case 86: 
+            weatherCondition3 = "Heavy snow";
+            break;
+        case 95: case 96: case 99:
+            weatherCondition3 = "Thunder";
+            break;
+        default:
+            weatherCondition3 = undefined;
+    } 
+
+    switch (weatherCondition4) {
+        case 0:
+            weatherCondition4 = "Sunny"
+        break;
+        case 1: case 2: case 3: 
+            weatherCondition4 = "Cloudy";
+        break; 
+        case 45: case 48:
+            weatherCondition4 = "Foggy";
+            break;
+        case 51: case 53: case 55: case 56: case 57: case 61: case 63: case 65: case 66: case 67:
+            weatherCondition4 = "Rainy";
+            break;
+        case 71: case 73: case 75: case 77:
+            weatherCondition4 = "Snowy";
+            break;
+        case 80: case 81: case 82:
+            weatherCondition4 = "Heavy rain";
+            break;
+        case 85: case 86: 
+            weatherCondition4 = "Heavy snow";
+            break;
+        case 95: case 96: case 99:
+            weatherCondition4 = "Thunder";
+            break;
+        default:
+            weatherCondition4 = undefined;
+    } 
+
+    switch (weatherCondition5) {
+        case 0:
+            weatherCondition5 = "Sunny"
+        break;
+        case 1: case 2: case 3: 
+            weatherCondition5 = "Cloudy";
+        break; 
+        case 45: case 48:
+            weatherCondition5 = "Foggy";
+            break;
+        case 51: case 53: case 55: case 56: case 57: case 61: case 63: case 65: case 66: case 67:
+            weatherCondition5 = "Rainy";
+            break;
+        case 71: case 73: case 75: case 77:
+            weatherCondition5 = "Snowy";
+            break;
+        case 80: case 81: case 82:
+            weatherCondition5 = "Heavy rain";
+            break;
+        case 85: case 86: 
+            weatherCondition5 = "Heavy snow";
+            break;
+        case 95: case 96: case 99:
+            weatherCondition5 = "Thunder";
+            break;
+        default:
+            weatherCondition5 = undefined;
+    } 
+
+    switch (weatherCondition6) {
+        case 0:
+            weatherCondition6 = "Sunny"
+        break;
+        case 1: case 2: case 3: 
+            weatherCondition6 = "Cloudy";
+        break; 
+        case 45: case 48:
+            weatherCondition6 = "Foggy";
+            break;
+        case 51: case 53: case 55: case 56: case 57: case 61: case 63: case 65: case 66: case 67:
+            weatherCondition6 = "Rainy";
+            break;
+        case 71: case 73: case 75: case 77:
+            weatherCondition6 = "Snowy";
+            break;
+        case 80: case 81: case 82:
+            weatherCondition6 = "Heavy rain";
+            break;
+        case 85: case 86: 
+            weatherCondition6 = "Heavy snow";
+            break;
+        case 95: case 96: case 99:
+            weatherCondition6 = "Thunder";
+            break;
+        default:
+            weatherCondition6 = undefined;
+    } 
+
+    switch (weatherCondition7) {
+        case 0:
+            weatherCondition7 = "Sunny"
+        break;
+        case 1: case 2: case 3: 
+            weatherCondition7 = "Cloudy";
+        break; 
+        case 45: case 48:
+            weatherCondition7 = "Foggy";
+            break;
+        case 51: case 53: case 55: case 56: case 57: case 61: case 63: case 65: case 66: case 67:
+            weatherCondition7 = "Rainy";
+            break;
+        case 71: case 73: case 75: case 77:
+            weatherCondition7 = "Snowy";
+            break;
+        case 80: case 81: case 82:
+            weatherCondition7 = "Heavy rain";
+            break;
+        case 85: case 86: 
+            weatherCondition7 = "Heavy snow";
+            break;
+        case 95: case 96: case 99:
+            weatherCondition7 = "Thunder";
+            break;
+        default:
+            weatherCondition7 = undefined;
+    } 
+
     document.getElementById("weather1").innerHTML = weatherCondition1;
     document.getElementById("weather2").innerHTML = weatherCondition2;
     document.getElementById("weather3").innerHTML = weatherCondition3;
@@ -622,6 +826,9 @@ function loadWeatherCondition() {
 }
 
 function loadWindDirection() {
+
+    
+
     document.getElementById("windDir1").innerHTML = windDirection1;
     document.getElementById("windDir2").innerHTML = windDirection2;
     document.getElementById("windDir3").innerHTML = windDirection3;
