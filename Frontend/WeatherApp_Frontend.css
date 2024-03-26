@@ -13,6 +13,7 @@ body {
 table {
     table-layout: fixed;
     width: 50%;
+    background-color: hsla(200, 100%, 50%, 0.25);  
 }
 
 .tableData {
