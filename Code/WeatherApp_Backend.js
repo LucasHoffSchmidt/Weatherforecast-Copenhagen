@@ -104,7 +104,7 @@ var sunset7;
 
 // FUNCTIONS
 // Updates all weather data
-function updateWeatherTable() {
+window.onload = function updateWeatherTable() {
     changeDates();
     getWeatherDataFromAPI();
     startTimer();
@@ -783,17 +783,4 @@ function updateWeatherDays() {
     document.getElementById("day5").innerHTML = day5;
     document.getElementById("day6").innerHTML = day6;
     document.getElementById("day7").innerHTML = day7;
-}
-
-// Starts a 60 seconds timer and sets the Update Weather Data button inactive during this time
-function startTimer() {
-    document.getElementById("updateButton").disabled = true;
-    timerText = "Updating..."; 
-    document.getElementById("timerText").innerHTML = timerText;
-    setTimeout(timerEnded, 3000);
-}
-
-function timerEnded() {
-    document.getElementById("updateButton").disabled = false;
-    document.getElementById("timerText").innerHTML = "";
 }
