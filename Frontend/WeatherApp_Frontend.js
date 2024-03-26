@@ -39,9 +39,6 @@ var seventhMonth;
 const weekdayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 // VARIABLES TO CONTAIN WEATHER DATA
-// API JSON Object
-var APIData;
-
 // Temperature
 var temperature1;
 var temperature2;
@@ -593,8 +590,8 @@ function getWeatherDataFromAPI() {
         loadWindDirection();
         loadWindSpeed();
         loadPrecipitation();
-        loadAirMoisture();
-        loadVisibility();
+        loadSunriseTime();
+        loadSunsetTime();
     })
     .catch(error => {
         console.error("There was an operation with the fetch operation", error);
@@ -612,7 +609,6 @@ function loadTemperature() {
 }
 
 function loadWeatherCondition() {
-
     document.getElementById("weather1").innerHTML = changeWeatherFromCode(weatherCondition1);
     document.getElementById("weather2").innerHTML = changeWeatherFromCode(weatherCondition2);
     document.getElementById("weather3").innerHTML = changeWeatherFromCode(weatherCondition3);
@@ -622,38 +618,39 @@ function loadWeatherCondition() {
     document.getElementById("weather7").innerHTML = changeWeatherFromCode(weatherCondition7);
 }
 
+// Changes the weather condition from a number weather code, to a string weather code
 function changeWeatherFromCode(weatherCode) {
     switch (weatherCode) {
         case 0:
-            weatherCode = "Sunny"
-        break;
+            return weatherCode = "Sunny"
+            break;
         case 1: case 2: case 3: 
-            weatherCode = "Cloudy";
-        break; 
+            return weatherCode = "Cloudy";
+            break; 
         case 45: case 48:
-            weatherCode = "Foggy";
+            return weatherCode = "Foggy";
             break;
         case 51: case 53: case 55: case 56: case 57: case 61: case 63: case 65: case 66: case 67:
-            weatherCode = "Rainy";
+            return weatherCode = "Rainy";
             break;
         case 71: case 73: case 75: case 77:
-            weatherCode = "Snowy";
+            return weatherCode = "Snowy";
             break;
         case 80: case 81: case 82:
-            weatherCode = "Heavy rain";
+            return weatherCode = "Heavy rain";
             break;
         case 85: case 86: 
-            weatherCode = "Heavy snow";
+            return weatherCode = "Heavy snow";
             break;
         case 95: case 96: case 99:
-            weatherCode = "Thunder";
+            return weatherCode = "Thunder";
             break;
         default:
-            weatherCode = undefined;
+            return weatherCode = undefined;
+    }
 }
 
 function loadWindDirection() {
-
     document.getElementById("windDir1").innerHTML = changeWindToCardinal(windDirection1);
     document.getElementById("windDir2").innerHTML = changeWindToCardinal(windDirection2);
     document.getElementById("windDir3").innerHTML = changeWindToCardinal(windDirection3);
@@ -663,68 +660,69 @@ function loadWindDirection() {
     document.getElementById("windDir7").innerHTML = changeWindToCardinal(windDirection7);
 }
 
+// Changes wind from degrees to cardinal values
 function changeWindToCardinal(wind) {
-    if (wind > 360-11.25 || wind <= 0+11.25) {
+    if (wind > (360-11.25) || wind <= (0+11.25)) {
         wind = "N";
         return wind;
     }
-    else if (wind > 22.5-11.25 || wind <= 22.5+11.25) {
+    else if (wind > (22.5-11.25) || wind <= (22.5+11.25)) {
         wind = "NNE";
         return wind;
     }
-    else if (wind > 45-11.25 || wind <= 45+11.25) {
+    else if (wind > (45-11.25) || wind <= (45+11.25)) {
         wind = "NE";
         return wind;
     }
-    else if (wind > 67.5-11.25 || wind <= 67.5+11.25) {
+    else if (wind > (67.5-11.25) || wind <= (67.5+11.25)) {
         wind = "ENE";
         return wind;
     }
-    else if (wind > 90-11.25 || wind <= 90+11.25) {
+    else if (wind > (90-11.25) || wind <= (90+11.25)) {
         wind = "E";
         return wind;
     }
-    else if (wind > 112.5-11.25 || wind <= 112.5+11.25) {
+    else if (wind > (112.5-11.25) || wind <= (112.5+11.25)) {
         wind = "ESE";
         return wind;
     }
-    else if (wind > 135-11.25 || wind <= 135+11.25) {
+    else if (wind > (135-11.25) || wind <= (135+11.25)) {
         wind = "SE";
         return wind;
     }
-    else if (wind > 157.5-11.25 || wind <= 157.5+11.25) {
+    else if (wind > (157.5-11.25) || wind <= (157.5+11.25)) {
         wind = "SSE";
         return wind;
     }
-    else if (wind > 180-11.25 || wind <= 180+11.25) {
+    else if (wind > (180-11.25) || wind <= (180+11.25)) {
         wind = "S";
         return wind;
     }
-    else if (wind > 202.5-11.25 || wind <= 202.5+11.25) {
+    else if (wind > (202.5-11.25) || wind <= (202.5+11.25)) {
         wind = "SSW";
         return wind;
     }
-    else if (wind > 225-11.25 || wind <= 225+11.25) {
+    else if (wind > (225-11.25) || wind <= (225+11.25)) {
         wind = "SW";
         return wind;
     }
-    else if (wind > 247.5-11.25 || wind <= 247.5+11.25) {
+    else if (wind > (247.5-11.25) || wind <= (247.5+11.25)) {
         wind = "WSW";
         return wind;
     }
-    else if (wind > 270-11.25 || wind <= 270+11.25) {
+    else if (wind > (270-11.25) || wind <= (270+11.25)) {
         wind = "W";
         return wind;
     }
-    else if (wind > 292.5-11.25 || wind <= 292.5+11.25) {
+    else if (wind > (292.5-11.25) || wind <= (292.5+11.25)) {
         wind = "WNW";
         return wind;
     }
-    else if (wind > 315-11.25 || wind <= 315+11.25) {
+    else if (wind > (315-11.25) || wind <= (315+11.25)) {
         wind = "NW";
         return wind;
     }
-    else if (wind > 337.5-11.25 || wind <= 337.5+11.25) {
+    else if (wind > (337.5-11.25) || wind <= (337.5+11.25)) {
         wind = "NNW";
         return wind;
     }
@@ -751,23 +749,30 @@ function loadPrecipitation() {
 }
 
 function loadSunriseTime() {
-    document.getElementById("sunrise1").innerHTML = sunrise1;
-    document.getElementById("sunrise2").innerHTML = sunrise2;
-    document.getElementById("sunrise3").innerHTML = sunrise3;
-    document.getElementById("sunrise4").innerHTML = sunrise4;
-    document.getElementById("sunrise5").innerHTML = sunrise5;
-    document.getElementById("sunrise6").innerHTML = sunrise6;
-    document.getElementById("sunrise7").innerHTML = sunrise7;
+    document.getElementById("sunrise1").innerHTML = getSunTime(sunrise1);
+    document.getElementById("sunrise2").innerHTML = getSunTime(sunrise2);
+    document.getElementById("sunrise3").innerHTML = getSunTime(sunrise3);
+    document.getElementById("sunrise4").innerHTML = getSunTime(sunrise4);
+    document.getElementById("sunrise5").innerHTML = getSunTime(sunrise5);
+    document.getElementById("sunrise6").innerHTML = getSunTime(sunrise6);
+    document.getElementById("sunrise7").innerHTML = getSunTime(sunrise7);
+}
+
+function getSunTime(sun) {
+    let pureTime;
+    // Extracts the substring of the string, from the 5th last character
+    pureTime = sun.slice(-5);
+    return pureTime;
 }
 
 function loadSunsetTime() {
-    document.getElementById("sunset1").innerHTML = sunset1;
-    document.getElementById("sunset2").innerHTML = sunset2;
-    document.getElementById("sunset3").innerHTML = sunset3;
-    document.getElementById("sunset4").innerHTML = sunset4;
-    document.getElementById("sunset5").innerHTML = sunset5;
-    document.getElementById("sunset6").innerHTML = sunset6;
-    document.getElementById("sunset7").innerHTML = sunset7;
+    document.getElementById("sunset1").innerHTML = getSunTime(sunset1);
+    document.getElementById("sunset2").innerHTML = getSunTime(sunset2);
+    document.getElementById("sunset3").innerHTML = getSunTime(sunset3);
+    document.getElementById("sunset4").innerHTML = getSunTime(sunset4);
+    document.getElementById("sunset5").innerHTML = getSunTime(sunset5);
+    document.getElementById("sunset6").innerHTML = getSunTime(sunset6);
+    document.getElementById("sunset7").innerHTML = getSunTime(sunset7);
 }
 
 function updateWeatherDays() {
@@ -789,6 +794,6 @@ function startTimer() {
 }
 
 function timerEnded() {
-    document.getElementById("updateButton").disabled = false
+    document.getElementById("updateButton").disabled = false;
     document.getElementById("timerText").innerHTML = "";
 }
