@@ -20,7 +20,7 @@ caption {
 
 th {
     color: darkblue;
-    text-overflow:initial;
+    overflow-wrap: break-word;
 }
 
 table td {
