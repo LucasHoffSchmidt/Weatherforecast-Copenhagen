@@ -1,2 +1,9 @@
-# Weekly weather forecast for Copenhagen
-Check it out at [Forecast](https://lucashoffschmidt.github.io/Weatherforecast-Copenhagen/)
+# Weekly weather forecast website for Copenhagen
+## Description
+A website showing real time weather data for the next week in Copenhagen.
+
+## Technologies Used
+Javascript, css, html
+
+## Getting started
+Go to [Forecast](https://lucashoffschmidt.github.io/Weatherforecast-Copenhagen/) to see the current weather forecast for the next 7 days in Copenhagen. 
