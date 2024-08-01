@@ -2,7 +2,7 @@
 ## Description
 A website showing real-time weather data for the next week in Copenhagen.
 
-## Technologies Used
+## Technologies used
 Javascript, CSS, HTML
 
 ## Project showcase
