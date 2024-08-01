@@ -9,4 +9,4 @@ Javascript, CSS, HTML
 ![Weather_Forecast_Picture](images/Forecast_Picture.png)
 
 ## Getting started
-Go to [Forecast](https://lucashoffschmidt.github.io/Weatherforecast-Copenhagen/) to see the current weather forecast for the next 7 days in Copenhagen. 
+Go to [Weather Forecast](https://lucashoffschmidt.github.io/Weatherforecast-Copenhagen/) to see the current weather forecast for the next 7 days in Copenhagen. 
