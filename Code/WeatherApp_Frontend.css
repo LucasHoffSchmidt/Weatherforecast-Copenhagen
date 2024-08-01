@@ -29,7 +29,7 @@ table td {
 
 @media (min-width: 1200px) {
     body {
-        background-image: url(../images/sunrise.jpg);
+        background-image: url(../Images/sunrise.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
