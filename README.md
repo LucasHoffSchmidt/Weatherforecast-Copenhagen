@@ -8,4 +8,4 @@ _Weather Forecast Example_
 Javascript, CSS, HTML
 
 ## Getting started
-You can go to [Weather Forecast](https://lucashoffschmidt.github.io/Weatherforecast-Copenhagen/) to see the current weather forecast for the next 7 days in Copenhagen. 
+You can go to [Weather Forecast](https://lucashoffschmidt.github.io/Weatherforecast_Copenhagen/) to see the current weather forecast for the next 7 days in Copenhagen. 
